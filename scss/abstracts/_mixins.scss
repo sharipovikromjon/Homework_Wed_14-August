@@ -40,3 +40,26 @@
   font-weight: 600;
   line-height: 25px;
 }
+
+// BUTTONS
+
+@mixin btn-normal-state-light {
+  background-color: #012f34;
+  color: $white;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  display: inline-block;
+  padding: 10px 33px;
+  border-radius: 10px;
+  &:hover {
+    border-radius: 24px;
+    background-color: $white;
+    color: $secondary-dark_green;
+  }
+  &:disabled {
+    border-radius: 10px;
+    opacity: 0.25;
+  }
+}
