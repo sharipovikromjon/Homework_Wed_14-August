@@ -1,0 +1,12 @@
+@import to main.scss - order of folders
+
+
+// Base styles
+
+// Abstract styles
+
+// Layout
+
+// Components
+
+// Pages
