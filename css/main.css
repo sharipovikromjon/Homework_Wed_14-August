@@ -78,4 +78,108 @@ a {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.header {
+  padding-top: 48px;
+  padding-bottom: 100px;
+  background-color: #014e56;
+}
+.header__sub-list--link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header__sub-list--link:hover {
+  color: #f67e7e;
+}
+.header__btn-block--button {
+  background-color: #012f34;
+  color: #fff;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  display: inline-block;
+  padding: 10px 33px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.header__btn-block--button:hover {
+  border-radius: 24px;
+  background-color: #fff;
+  color: #002529;
+}
+.header__btn-block--button:disabled {
+  border-radius: 10px;
+  opacity: 0.25;
+}
+.header__btn-block, .header__sub-list {
+  display: none;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__item--logo {
+  width: 127.958px;
+  height: 32px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.header__menu-item--menu {
+  width: 20px;
+  height: 17px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-item {
+    display: none;
+  }
+  .header__btn-block {
+    display: block;
+  }
+  .header__item, .header__sub-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__sub-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    margin-left: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__sub-list {
+    margin-left: 80px;
+  }
 }/*# sourceMappingURL=main.css.map */
