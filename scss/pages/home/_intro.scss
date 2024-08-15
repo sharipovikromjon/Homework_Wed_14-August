@@ -1,0 +1,97 @@
+.intro {
+  padding-top: 80px;
+  padding-bottom: 197px;
+  background-color: $primary-midnight_green;
+  background-image: url("../../../images/svg/intro-bg-img-2.svg");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  &__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title-item {
+    margin-bottom: 18px;
+    &--title {
+      color: $white;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+      width: 74%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &--highlight {
+      color: $primary-light_coral;
+    }
+  }
+  &__text-item {
+    max-width: 457px;
+    margin-left: auto;
+    margin-right: auto;
+    &--text {
+      @include body2($white);
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}
+// media
+// tablet - 768px
+@media screen and (min-width: 768px) {
+  .intro {
+    padding-top: 112px;
+    padding-bottom: 256px;
+    &__title-item {
+      margin-bottom: 24px;
+      &--title {
+        @include h1_small($white);
+        max-width: 337px;
+      }
+    }
+  }
+}
+// media
+// desktop - 1440px
+@media screen and (min-width: 1440px) {
+  .intro {
+    padding-top: 133px;
+    padding-bottom: 250px;
+    background-image: url("../../../images/svg/intro-bg-img-1.svg"),
+      url("../../../images/svg/intro-bg-img-2.svg");
+    background-position: 0% 30%, 75% 100%;
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 123px;
+    }
+    &__title-item {
+      &--title {
+        @include h1_large($white);
+        max-width: 542px;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    &__text-item {
+      max-width: 445px;
+      margin-left: 0;
+      margin-right: 0;
+      &--text {
+        @include body1($white);
+        margin-top: 79px;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      &--line {
+        width: 50px;
+        height: 4px;
+        flex-shrink: 0;
+        background-color: $secondary-rapture_blue;
+      }
+    }
+  }
+}

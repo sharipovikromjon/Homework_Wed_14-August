@@ -2,24 +2,28 @@
 
 // Headings
 @mixin h1_large($color) {
+  color: $color;
   font-style: normal;
   font-size: 100px;
   font-weight: 700;
   line-height: 100px;
 }
 @mixin h1_small($color) {
+  color: $color;
   font-style: normal;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
 }
 @mixin h2($color) {
+  color: $color;
   font-style: normal;
   font-size: 48px;
   font-weight: 700;
   line-height: 48px;
 }
 @mixin h3($color) {
+  color: $color;
   font-style: normal;
   font-size: 18px;
   font-weight: 700;
@@ -29,12 +33,14 @@
 // Body
 
 @mixin body1($color) {
+  color: $color;
   font-style: normal;
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
 }
 @mixin body2($color) {
+  color: $color;
   font-style: normal;
   font-size: 15px;
   font-weight: 600;
