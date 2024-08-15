@@ -438,4 +438,100 @@ a {
   .services__card--text {
     max-width: 445px;
   }
+}
+.feedback {
+  padding-top: 140px;
+  padding-bottom: 164px;
+  background-color: #004047;
+  background-image: url("../../../images/svg/feedback-bg-img-1.svg"), url("../../../images/svg/feedback-bg-img-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 100% 100%;
+}
+.feedback__title-block {
+  text-align: center;
+}
+.feedback__title-block--title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.feedback__title-block--highlight {
+  color: #79c8c7;
+}
+.feedback__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.feedback__item {
+  padding-top: 84px;
+  background-image: url("../../../images/svg/feedback-bg-card.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 16%;
+}
+.feedback__item--text {
+  color: #fff;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+.feedback__item--client-name {
+  color: #79c8c7;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 2px;
+}
+.feedback__item--client-job {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 652px) {
+  .feedback__title-block, .feedback__item {
+    max-width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .feedback__title-block {
+    max-width: 932px;
+  }
+  .feedback__title-block--title {
+    color: #fff;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+  .feedback__list {
+    padding-top: 92px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .feedback__item--text {
+    margin-bottom: 24px;
+  }
+  .feedback__item--client-job {
+    margin-bottom: 32px;
+  }
 }/*# sourceMappingURL=main.css.map */
