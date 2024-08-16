@@ -1,0 +1,6 @@
+About
+  intro
+  team
+  clients
+  contact
+  
