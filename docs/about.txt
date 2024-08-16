@@ -4,3 +4,7 @@ About
   clients
   contact
   
+
+  branches should be merged to main branches
+    -about
+    -about-intro
