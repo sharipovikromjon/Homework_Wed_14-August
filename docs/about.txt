@@ -8,4 +8,4 @@ About
   branches should be merged to main branches
     -about (not merged)
     -about-intro (not-merged)
-    -about-team
+    -about-team (not-merged)

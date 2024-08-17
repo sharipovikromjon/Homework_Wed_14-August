@@ -1,0 +1,108 @@
+.about-team {
+  padding-top: 88px;
+  padding-bottom: 116px;
+  background-color: $secondary-deep_jungle_green;
+  background-image: url("../../../images/svg/about-svg-img/about-team-bg-img-1.svg"),
+    url("../../../images/svg/about-svg-img/about-team-bg-img-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 100% 100%;
+  &__container--title {
+    text-align: center;
+    color: $white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  &__list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 52px;
+  }
+  &__item {
+    padding-top: 32px;
+    padding-bottom: 56px;
+    background-color: $secondary-sacramento_state_green;
+    position: relative;
+    max-width: 327px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    &--img {
+      margin-bottom: 16px;
+    }
+    &--name {
+      @include h3($secondary-rapture_blue);
+    }
+    &--job {
+      @include body2($white);
+      font-weight: 500;
+      font-style: italic;
+    }
+    &--add {
+      position: absolute;
+      bottom: -10%;
+      left: 136px;
+    }
+  }
+  &__item2 {
+    background-color: $secondary-dark_green;
+    padding-top: 35px;
+    padding-bottom: 63px;
+    &--name2 {
+      margin-bottom: 8px;
+    }
+    &--job2 {
+      font-style: normal;
+      font-weight: 600;
+      margin-bottom: 24px;
+      max-width: 235px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// media
+@media screen and (min-width: 768px) {
+  .about-team {
+    background-image: url("../../../images/svg/about-svg-img/about-team-tablet-bg.svg"),
+      url("../../../images/svg/about-svg-img/about-team-bg-img-2.svg");
+    background-position: 0% 0%, 100% 100%;
+    padding-top: 150px;
+    padding-bottom: 128px;
+    &__item {
+      max-width: 281px;
+      margin-left: 0;
+      margin-right: 0;
+      &--add {
+        left: 113px;
+      }
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 11px;
+      row-gap: 76px;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-team {
+    padding-top: 140px;
+    padding-bottom: 168px;
+    &__item {
+      max-width: 350px;
+      &--add {
+        left: 147px;
+      }
+    }
+    &__list {
+      margin-top: 64px;
+      column-gap: 30px;
+    }
+  }
+}
