@@ -1,0 +1,54 @@
+.contact {
+  background-color: $primary-light_coral;
+  padding-top: 83px;
+  padding-bottom: 83px;
+  background-image: url("../../images/svg/contact-bg-img.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 20px;
+  }
+  &__item {
+    text-align: center;
+    &--title {
+      color: $secondary-sacramento_state_green;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+    &--button {
+      @include btn-normal-state-light;
+      background-color: transparent;
+      border: 2px solid $secondary-sacramento_state_green;
+      color: $secondary-sacramento_state_green;
+      border-radius: 24px;
+    }
+  }
+}
+// media
+@media screen and (min-width: 768px) {
+  .contact {
+    &__list {
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 84px;
+      row-gap: 0;
+      align-items: center;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact {
+    padding-top: 74px;
+    padding-bottom: 76px;
+    &__item--title {
+      @include h2($secondary-sacramento_state_green);
+    }
+    &__list {
+      justify-content: space-between;
+    }
+  }
+}
