@@ -6,5 +6,6 @@ About
   
 
   branches should be merged to main branches
-    -about
-    -about-intro
+    -about (not merged)
+    -about-intro (not-merged)
+    -about-team
